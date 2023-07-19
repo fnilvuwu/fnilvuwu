@@ -15,10 +15,16 @@ jobs:
       - name: Header
         uses: lowlighter/metrics@latest
         with:
+          filename: metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
           base: header
-          config_timezone: Asia/Makassar
+      - name: Half-year calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.isocalendar.halfyear.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
       - name: Most used (with details)
