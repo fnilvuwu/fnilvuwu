@@ -24,6 +24,7 @@ jobs:
         with:
           filename: metrics.plugin.isocalendar.halfyear.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
       - name: Most used (with details)
@@ -31,6 +32,7 @@ jobs:
         with:
           filename: metrics.plugin.languages.details.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_languages: yes
           plugin_languages_ignored: >-
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
@@ -41,6 +43,8 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.anilist.svg
+          token: NOT_NEEDED
+          base: ""
           plugin_anilist: yes
           plugin_anilist_limit: 1
           plugin_anilist_limit_characters: 22
