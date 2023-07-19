@@ -1,32 +1,39 @@
-# Licensed under The Unlicense
-# Feel free to reuse, edit and redistribute this workflow as you wish, no credits needed
-# See https://github.com/lowlighter/metrics for documentation about how to use metrics action
-
+# Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 on:
-  # 🌏 Think about the planet! No need to update stats too frequently
-  schedule: [{cron: "0 16 * * *"}]
-  # 💡 The following line lets you run workflow manually from the action tab!
+  # Schedule updates (each hour)
+  schedule: [{cron: "0 0 * * *"}]
+  # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
+  push: {branches: ["master", "main"]}
 jobs:
-  metrics:
+  github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Example
-        uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.classic.svg
+          # Your GitHub token
+          # The following scopes are required:
+          #  - public_access (default scope)
+          # The following additional scopes may be required:
+          #  - read:org      (for organization related metrics)
+          #  - read:user     (for user related data)
+          #  - read:packages (for some packages related data)
+          #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header
-          plugin_lines: yes
-          
-      - name: Favorites anime and currently watching
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.anilist.svg
-          token: NOT_NEEDED
-          base: ""
+
+          # Options
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Makassar
           plugin_anilist: yes
-          plugin_anilist_medias: anime
-          plugin_anilist_sections: favorites, watching
-          plugin_anilist_limit: 1
+          plugin_anilist_limit: 2
+          plugin_anilist_limit_characters: 22
+          plugin_anilist_medias: anime, manga
+          plugin_anilist_sections: favorites
+          plugin_anilist_shuffle: yes
+          plugin_anilist_user: .user.login
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
