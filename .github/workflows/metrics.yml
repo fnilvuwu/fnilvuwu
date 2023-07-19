@@ -24,7 +24,6 @@ jobs:
         with:
           filename: metrics.plugin.isocalendar.halfyear.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
       - name: Most used (with details)
@@ -32,11 +31,21 @@ jobs:
         with:
           filename: metrics.plugin.languages.details.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
           plugin_languages: yes
           plugin_languages_ignored: >-
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
             gnuplot
           plugin_languages_details: percentage
           plugin_languages_limit: 8
+      - name: Favorites anime and currently watching
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.anilist.svg
+          plugin_anilist: yes
+          plugin_anilist_limit: 1
+          plugin_anilist_limit_characters: 22
+          plugin_anilist_medias: anime
+          plugin_anilist_sections: favorites
+          plugin_anilist_shuffle: yes
+          plugin_anilist_user: .user.login
           
