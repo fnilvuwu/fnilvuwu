@@ -1,4 +1,3 @@
-<h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> <b>Hi! Welcome</b></h1>
 <table border="0">
  <tr>
     <td><img src="/metrics.classic.svg" alt="Metrics Classic">
