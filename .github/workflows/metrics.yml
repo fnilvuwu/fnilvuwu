@@ -25,7 +25,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Options
-          filename: metrics.classic.svg
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Makassar
