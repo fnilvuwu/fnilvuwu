@@ -17,6 +17,6 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.classic.svg
-          base: repositories
+          base: header
           plugin_lines: yes
 
