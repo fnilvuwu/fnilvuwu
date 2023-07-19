@@ -1,2 +1,3 @@
-![Metrics](/github-metrics.svg)
+![Metrics](/metrics.classic.svg)
+![Metrics](/metrics.plugin.isocalendar.halfyear.svg)
 ![Metrics](/metrics.plugin.languages.details.svg)
