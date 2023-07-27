@@ -39,7 +39,7 @@ jobs:
             gnuplot
           plugin_languages_details: percentage
           plugin_languages_limit: 8
-      - name: Favorites anime and currently watching
+      - name: Favorites anime and favorites manga
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.anilist.svg
@@ -48,7 +48,7 @@ jobs:
           plugin_anilist: yes
           plugin_anilist_limit: 1
           plugin_anilist_limit_characters: 12
-          plugin_anilist_medias: anime
+          plugin_anilist_medias: anime, manga
           plugin_anilist_sections: favorites, characters
           plugin_anilist_user: fnilvuwu
           
