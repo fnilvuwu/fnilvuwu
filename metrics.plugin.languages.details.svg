@@ -21,14 +21,14 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="408.7901389028378" height="8" fill="#DA5B0B"/>
-                    <rect mask="url(#languages-bar)" x="408.7901389028378" y="0" width="21.259110754673927" height="8" fill="#178600"/>
-                    <rect mask="url(#languages-bar)" x="430.0492496575117" y="0" width="11.832822452034542" height="8" fill="#b07219"/>
-                    <rect mask="url(#languages-bar)" x="441.88207210954624" y="0" width="7.795061970557673" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="449.67713408010394" y="0" width="4.371628765109106" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="454.048762845213" y="0" width="3.0721632474451273" height="8" fill="#A97BFF"/>
-                    <rect mask="url(#languages-bar)" x="457.1209260926581" y="0" width="1.4454980808776654" height="8" fill="#867db1"/>
-                    <rect mask="url(#languages-bar)" x="458.5664241735358" y="0" width="1.433575826464178" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="408.6790286304647" height="8" fill="#DA5B0B"/>
+                    <rect mask="url(#languages-bar)" x="408.6790286304647" y="0" width="21.253332470509093" height="8" fill="#178600"/>
+                    <rect mask="url(#languages-bar)" x="429.93236110097376" y="0" width="11.829606258686244" height="8" fill="#b07219"/>
+                    <rect mask="url(#languages-bar)" x="441.76196735966005" y="0" width="7.792943251497965" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="449.554910611158" y="0" width="4.31523985886804" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="453.87015047002603" y="0" width="3.0713282251128504" height="8" fill="#A97BFF"/>
+                    <rect mask="url(#languages-bar)" x="456.94147869513887" y="0" width="1.6134161142961199" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="458.554894809435" y="0" width="1.445105190565017" height="8" fill="#867db1"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -40,7 +40,7 @@
                                 Jupyter Notebook
                             </div>
                             <small>
-                                <div>88.87%</div>
+                                <div>88.84%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -62,18 +62,18 @@
                                 JavaScript
                             </div>
                             <small>
-                                <div>0.95%</div>
+                                <div>0.94%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#867db1" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#3178c6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                VBA
+                                TypeScript
                             </div>
                             <small>
-                                <div>0.31%</div>
+                                <div>0.35%</div>
                             </small>
                         </div>
                     </section>
@@ -114,9 +114,9 @@
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#3178c6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#867db1" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                TypeScript
+                                VBA
                             </div>
                             <small>
                                 <div>0.31%</div>
